@@ -1,3 +1,7 @@
-h1 {
-    color: red;
-}
+@import './reset.scss';
+@import './variable.scss';
+@import './main.scss';
+@import './layouts/home.scss';
+// Main
+// Main
+@import './responsive';

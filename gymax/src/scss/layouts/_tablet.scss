@@ -1,0 +1,45 @@
+@media all and ( min-width: 576px) {
+    .container {
+        width: 100%;
+    }
+    .row {
+        display: flex;
+        margin: 0 15px;
+    }
+    .col-tl-1 {
+        @include col(1);
+    }
+    .col-tl-2 {
+        @include col(2);
+    }
+    .col-tl-3 {
+        @include col(3);
+    }
+    .col-tl-4 {
+        @include col(4);
+    }
+    .col-tl-5 {
+        @include col(5);
+    }
+    .col-tl-6 {
+        @include col(6);
+    }
+    .col-tl-7 {
+        @include col(7);
+    }
+    .col-tl-8 {
+        @include col(8);
+    }
+    .col-tl-9 {
+        @include col(9);
+    }
+    .col-tl-10 {
+        @include col(10);
+    }
+    .col-tl-11 {
+        @include col(11);
+    }
+    .col-tl-12 {
+        @include col(12);
+    }
+}

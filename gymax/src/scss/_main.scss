@@ -1,0 +1,8 @@
+/** Mixin col responsive
+*
+* - Use: @include col(number);
+*/
+
+@mixin col($px) {
+    width: calc(100%/12*$px);
+}

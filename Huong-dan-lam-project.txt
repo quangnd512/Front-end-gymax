@@ -30,3 +30,5 @@ Chèn đoạn code sau vào file settings.json . Sau đó cài extension Live Sa
 
 Sau đó gọi các font, slickjs và icon vào project
 
+
+Bước 2: Tạo các layouts và reset css
