@@ -6,3 +6,30 @@
 @mixin col($px) {
     width: calc(100%/12*$px);
 }
+
+// end Mixin col responsive
+// overlay box
+#wapper--overlay {
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333;
+    opacity: .6;
+}
+
+// end overlay box
+// Modal box login
+.modalBox__login {
+    background: #c0c0c0;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    max-width: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Modal box login

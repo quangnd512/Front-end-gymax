@@ -441,6 +441,27 @@ textarea {
 *
 * - Use: @include col(number);
 */
+#wapper--overlay {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  opacity: 0.6;
+}
+
+.modalBox__login {
+  background: #c0c0c0;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  max-width: 500px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .container {
   width: 100%;
 }
@@ -543,7 +564,7 @@ textarea {
     width: 100%;
   }
 }
-@media all and (min-width: 1140px) {
+@media all and (min-width: 1024px) {
   .container {
     max-width: 1140px;
     width: 100%;
@@ -589,4 +610,116 @@ textarea {
   .col-ds-12 {
     width: 100%;
   }
+}
+.header {
+  background: rgba(0, 0, 0, 0.6);
+}
+.header .header__wapper .logo {
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+.header .header__wapper .logo img {
+  width: 50%;
+}
+.header .header__wapper .navbar__mobile .navbar--overlay {
+  height: 100%;
+  width: 0;
+  max-width: 305px;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.header .header__wapper .navbar__mobile .navbar--overlay a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 21px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  border-bottom: 1px solid rgba(92, 92, 92, 0.1);
+}
+.header .header__wapper .navbar__mobile .navbar--overlay .menuMobile__icon {
+  position: relative;
+  border-bottom: 1px solid #f5f5f5;
+  background: rgba(0, 0, 0, 0.5);
+}
+.header .header__wapper .navbar__mobile .navbar--overlay .closeMenu {
+  position: absolute;
+  top: 10px;
+  right: 6px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.header .header__wapper .navbar__mobile .menuMobile__icon a {
+  color: #fff;
+}
+.header .header__wapper .navbar__mobile .menuMobile__icon a:last-child {
+  padding-left: 8px;
+}
+.header .header__wapper .navbar__mobile .menuMobile__icon a img {
+  width: 155px;
+}
+.header .header__wapper .navbar__mobile .navbar__mobile--icon {
+  text-align: center;
+  position: relative;
+  top: 38%;
+  left: 0;
+  transform: translate(0, -38%);
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.header .header__wapper .navbar--overlay a:hover {
+  color: #ddac55;
+}
+.header .header__wapper .header__right--mobile {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.header .header__wapper .header__right--mobile a {
+  padding-left: 20px;
+}
+
+.header__search {
+  margin: 10px 0;
+  height: 35px;
+  background: pink;
+  position: relative;
+}
+.header__search .btn__search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.header__search .btn__search input {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 4px;
+  border: unset;
+}
+.header__search .btn__search button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 4px 4px 0;
+  width: 45px;
+  border: 1px solid #f1f1f1;
+  background: red;
+}
+.header__search .btn__search .fa-magnifying-glass::before {
+  color: #fff;
 }

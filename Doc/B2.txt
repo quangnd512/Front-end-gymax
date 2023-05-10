@@ -1,0 +1,3 @@
+B2: Tạo khung layout và phần header
+
+Bước 1 Tạo khung layout cho phần index
